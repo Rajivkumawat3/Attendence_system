@@ -15,19 +15,18 @@ const StudentDashboard = () => {
 
     return(
         <div>
-        <h1 style={{color:'black',top:"40px",left:"90px",position:"absolute"}}>Welcom To student-Dashboard Attendence Page.....</h1>
+        <h1 style={{color:'black',top:"20px",left:"90px",position:"absolute"}}>Welcom To student-Dashboard Attendence Page.....</h1>
         <button 
             style={{
              position: 'absolute',
-             width:"7%",
-             top: '80px', 
+             width:"8%",
+             top: '30px', 
             right: '120px', 
-
+            padding:"3px"
                }}
         onClick={handleLogout}><h2>Logout</h2></button>
      </div>
     )
-
 };
 
 export default StudentDashboard;

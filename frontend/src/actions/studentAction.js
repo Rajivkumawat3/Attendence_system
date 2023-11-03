@@ -21,13 +21,13 @@ export const login = (rollNo, password) => async (dispatch) => {
   };
 
   // Register
-export const register = (studentData) => async (dispatch) => {
+export const register = (myForm) => async (dispatch) => {
     try {
       dispatch({ type: 'REGISTER_USER_REQUEST' });
   
-      const config = { headers: { "Content-Type": "multipart/form-data" } };
+      const config = { headers: { "Content-Type": "application/json" } };
   
-      const { data } = await axios.post(`/student/register`, studentData, config);
+      const { data } = await axios.post(`/student/register`, myForm, config);
   
       dispatch({ type: 'REGISTER_USER_SUCCESS', payload: data.student });
     } catch (error) {
@@ -39,7 +39,7 @@ export const register = (studentData) => async (dispatch) => {
   };
   
 
-
+  // clear errors
   export const clearErrors=()=>async(dispatch)=>{
 
     dispatch({type:'CLEAR_ERRORS'})

@@ -13,16 +13,18 @@ const studentController = {
         return res.status(400).json({ message: 'Student already exists' });
       }
 
-      const newStudent = new Student({
+      const newstudent = new Student({
         email, 
         rollNo,
         password
       });
 
-      await newStudent.save();
+      await newstudent.save();
 
      
-      sendToken(newStudent,201,res)
+     sendToken(newstudent,201,res)
+
+      
       
     } catch (error) {
       console.error('Error in Student registration:', error);

@@ -3,32 +3,32 @@ export const adminReducer = (state = { adminuser: {} }, action) => {
   
         case 'LOGIN_REQUEST_ADMIN':
             return {
-                loading: true,
-                isAuthenticated: false,
+                adminloading: true,
+                adminisAuthenticated: false,
               };
   
       case 'LOGIN_SUCCESS_ADMIN':
         return {
             ...state,
-            loading: false,
-            isAuthenticated: true,
-            user: action.payload,
+            adminloading: false,
+            adminisAuthenticated: true,
+            adminuser: action.payload,
           };
   
    
     case 'LOGOUT_SUCCESS_ADMIN':
       return {
-        loading: false,
-        user: null,
-        isAuthenticated: false,
+        adminloading: false,
+        adminuser: null,
+        adminisAuthenticated: false,
       };
   
        case 'LOGIN_FAIL_ADMIN':
             return {
                 ...state,
-                loading: false,
-                isAuthenticated: false,
-                user: null,
+                adminloading: false,
+                adminisAuthenticated: false,
+                adminuser: null,
                 error: action.payload,
               };
   
@@ -36,7 +36,7 @@ export const adminReducer = (state = { adminuser: {} }, action) => {
         case 'LOGOUT_FAIL_ADMIN':
           return {
             ...state,
-            loading: false,
+            adminloading: false,
             error: action.payload,
           };
   

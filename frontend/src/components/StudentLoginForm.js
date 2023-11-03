@@ -30,8 +30,10 @@ const alert=useAlert()
         dispatch(clearErrors);
     }
     if(isAuthenticated){
+      alert.success("Student Login Successfully");
       navigate(redirect)
   }
+  
 
   },[dispatch,error,isAuthenticated,alert,navigate,redirect])
 
