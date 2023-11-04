@@ -28,6 +28,20 @@ const AdminDashboard = () => {
         transition: 'background-color 0.3s',
 
     };
+    const buttonStyles = {
+        position: 'absolute',
+        bottom: '200px',
+        width:'20%',
+        left: '30px',
+        padding: '15px',
+        backgroundColor: '#007bff',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s',
+
+    };
     return(
         <div>
         <h1 style={{color:'black',top:"20px",left:"90px",position:"absolute"}}>Welcom To Admin-Dashboard Page.....</h1>
@@ -45,6 +59,10 @@ const AdminDashboard = () => {
 
         <Link to="/all-students">
                 <button style={buttonStyle}>View All Students</button>
+            </Link>
+
+            <Link to="/admin/qrcode">
+                <button style={buttonStyles}>Visit QR code page</button>
             </Link>
      </div>
     )

@@ -25,6 +25,18 @@ const studentSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  attendance: [
+    {
+      date: {
+        type: Date,
+        default: Date.now
+      },
+      isPresent: {
+        type: Boolean,
+        default: false
+      }
+    }
+  ],
 
   resetPasswordToken: String,
   resetPasswordExpire: Date,

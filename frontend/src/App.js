@@ -10,6 +10,8 @@ import StudentDashboard from "./components/studentDashboard"
 import AdminDashboard from './components/adminDashboard';
 import ProtectedRoute from './components/Route/protectedRoute';
 import AdminProtected from './components/Route/adminProtected';
+import StudentList from './admin/StudentList';
+import AdminQRCodeDisplay from './components/QRCode';
 
 function App() {
 
@@ -35,6 +37,24 @@ function App() {
                 element={
                     <AdminProtected adminisAuthenticated={adminisAuthenticated} adminuser={adminuser} adminloading={adminloading}>
                      <AdminDashboard />
+                  </AdminProtected>
+                  }
+                  />
+                   <Route
+                exact
+                path="/all-students"
+                element={
+                    <AdminProtected adminisAuthenticated={adminisAuthenticated} adminuser={adminuser} adminloading={adminloading}>
+                     <StudentList/>
+                  </AdminProtected>
+                  }
+                  />
+                      <Route
+                exact
+                path="/admin/qrcode"
+                element={
+                    <AdminProtected adminisAuthenticated={adminisAuthenticated} adminuser={adminuser} adminloading={adminloading}>
+                     <AdminQRCodeDisplay/>
                   </AdminProtected>
                   }
                   />

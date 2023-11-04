@@ -16,17 +16,18 @@ app.use(cookieParser())
 app.use(bodyParser.urlencoded({extended:true}))
 
 
- 
-// Import Admin Routes
+
 const adminRoutes = require('./routes/adminRoutes');
-//  Import Student Routes
 const studentRoutes=require("./routes/studentRoutes")
+const attendanceRoutes= require('./routes/attendenceRoutes');
 
 
-// Use Admin Routes
+
+
 app.use('/admin', adminRoutes);
-//use student Routes
 app.use('/student',studentRoutes)
+
+app.use('/attendence', attendanceRoutes);
 
 
 

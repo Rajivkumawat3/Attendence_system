@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { logout } from '../actions/studentAction';
 import { Navigate } from "react-router-dom";
 
+import StudentAttendanceScanner from './QRScanner';
+
 
 const StudentDashboard = () => {
     const dispatch = useDispatch();
@@ -14,8 +16,9 @@ const StudentDashboard = () => {
     }
 
     return(
-        <div>
-        <h1 style={{color:'black',top:"20px",left:"90px",position:"absolute"}}>Welcom To student-Dashboard Attendence Page.....</h1>
+        <div >
+        <div >
+        <h1 style={{color:'black',top:"20px",left:"90px",position:"absolute"}}>Scan Qr code for mark your attendence.....</h1>
         <button 
             style={{
              position: 'absolute',
@@ -25,6 +28,13 @@ const StudentDashboard = () => {
             padding:"3px"
                }}
         onClick={handleLogout}><h2>Logout</h2></button>
+
+     </div>
+     
+      <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',margin:"300px"}}>
+      
+        <StudentAttendanceScanner/>
+      </div>
      </div>
     )
 };
