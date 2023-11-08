@@ -78,7 +78,7 @@ const studentController = {
   },
   
  
-getAllStudent : async (req, res, next) => {
+getAllStudent : async (req, res) => {
     
   try{
     const Students = await Student.find();
@@ -94,7 +94,7 @@ getAllStudent : async (req, res, next) => {
  
 },
  
- getSingleStudent: async(req,res,next)=>{
+ getSingleStudent: async(req,res)=>{
    try{
     const student= await Student.findById(req.params.id);
 
@@ -112,7 +112,7 @@ getAllStudent : async (req, res, next) => {
    }
  },
 
- deleteStudent: async(req,res,next)=>{
+ deleteStudent: async(req,res)=>{
   try{
     const student = await Student.findById(req.params.id);
 

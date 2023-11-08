@@ -78,7 +78,7 @@ const adminController = {
   },
   
  
-getAllAdmin : async (req, res, next) => {
+getAllAdmin : async (req, res) => {
     
   try{
     const Admins = await Admin.find();
@@ -94,7 +94,7 @@ getAllAdmin : async (req, res, next) => {
  
 },
  
- getSingleAdmin: async(req,res,next)=>{
+ getSingleAdmin: async(req,res)=>{
    try{
     const admin = await Admin.findById(req.params.id);
 
@@ -114,7 +114,7 @@ getAllAdmin : async (req, res, next) => {
    }
  },
 
- deleteAdmin: async(req,res,next)=>{
+ deleteAdmin: async(req,res)=>{
   try{
     const admin = await Admin.findById(req.params.id);
 
