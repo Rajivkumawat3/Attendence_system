@@ -7,7 +7,7 @@ import { fetchQRCode } from '../actions/qrActionAdmin';
 
 const AdminQRCodeDisplay = () => {
   const dispatch = useDispatch();
-  const {qrCodeData,error} = useSelector(state => state.qrcode);
+  const {qrCodeData} = useSelector(state => state.qrcode);
   
 
   useEffect(() => {

@@ -6,7 +6,7 @@ import { attendanceMarkedSuccess,markAttendance } from '../actions/qrActionStude
 
 const StudentAttendanceScanner = () => {
   const dispatch = useDispatch();
-  const {scannedData,error} = useSelector(state => state.qrScanner);
+  const {scannedData} = useSelector(state => state.qrScanner);
   
 
   const handleScan = (data) => {
