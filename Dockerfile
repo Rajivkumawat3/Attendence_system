@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:slim
 
 WORKDIR /app
 
@@ -8,6 +8,7 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4003
+EXPOSE 4004
 
 CMD ["npm","start"]
+

@@ -19,7 +19,7 @@ services:
     container_name: node-api
     restart: always
     ports:
-      - "4003:4003"
+      - "4004:4004"
     networks:
       - mern-network
   
