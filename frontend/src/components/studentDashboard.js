@@ -23,7 +23,7 @@ const StudentDashboard = () => {
             style={{
              position: 'absolute',
              width:"8%",
-             top: '30px', 
+             top: '90px', 
             right: '120px', 
             padding:"3px"
                }}

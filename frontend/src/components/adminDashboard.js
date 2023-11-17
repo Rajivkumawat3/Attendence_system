@@ -5,6 +5,7 @@ import { logout } from '../actions/adminAction';
 import { Navigate } from "react-router-dom";
 import NewStudentForm from '../admin/NewStudent';
 import { Link } from 'react-router-dom'
+import './AdminDashboard.css';
 
 const AdminDashboard = () => {
     const dispatch = useDispatch();
@@ -49,7 +50,8 @@ const AdminDashboard = () => {
             style={{
              position: 'absolute',
              width:"8%",
-             top: '30px', 
+             top: '80px', 
+             backgroundColor:'#007bff',
             right: '120px', 
             padding:"3px"
                }}

@@ -1,0 +1,75 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem; 
+  }
+ 
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .logout-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .dashboard-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .new-student-form {
+    width: 80%; 
+    max-width: 400px; 
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1rem; 
+    }
+    h2{
+        font-size: 1rem; 
+        color:black
+    }
+  
+    .logout-button,
+    .dashboard-button {
+      width: 100%;
+      margin-top: 10px;
+    background-color: #0056b3;
+
+    }
+  
+    .dashboard-button {
+      margin-bottom: 10px;
+    }
+  }
+  

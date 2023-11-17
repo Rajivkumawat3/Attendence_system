@@ -1,5 +1,5 @@
 const Attendance = require('../models/Attendence');
-
+const Student = require('../models/Student');
 
 const attendenceController={
     getAllStudentAttendance: async (req, res) => {
