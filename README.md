@@ -12,13 +12,11 @@ This project is all about to create student management system where student is g
 4.Download dependencies
 Go inside ./Flipr-task1/ and RUN
 
-sh
  npm install 
 
 
-Go inside Fit-Market/frontend and RUN
+Go inside  .Flipr-task1/frontend and RUN
 
-sh
 npm -f install
 
 
