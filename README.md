@@ -1,4 +1,4 @@
-# Flipr-task1
+# Flipr
 This project is all about to create student management system where student is given email-id , rollNo and password by college or school and based on these student login in website portal and mark attendence by scanning the QR code
 
 ## Getting Started
